@@ -51,6 +51,16 @@ build() {
 
     # Restaurer le fichier original
     mv tauri.conf.json.bak tauri.conf.json
+}
+
+check() {
+    cd "$srcdir/markeasy/src-tauri"
+
+    export RUSTUP_TOOLCHAIN=stable
+    export CARGO_HOME="$srcdir/cargo-home"
+
+    cargo test --frozen --all-features || true
+}
 
 package() {
     cd "$srcdir/markeasy"
