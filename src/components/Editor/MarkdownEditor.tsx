@@ -61,6 +61,7 @@ export const MarkdownEditor: React.FC<MarkdownEditorProps> = ({
         theme="light"
         extensions={extensions}
         onChange={handleChange}
+        autoFocus={true}
         basicSetup={{
           lineNumbers: false,
           highlightActiveLineGutter: false,
