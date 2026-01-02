@@ -1,0 +1,19 @@
+pkgbase = markeasy-git
+	pkgdesc = Un éditeur Markdown moderne avec prévisualisation en temps réel (Tauri)
+	pkgver = 0.1.0
+	pkgrel = 1
+	url = https://github.com/votre-username/markeasy
+	arch = x86_64
+	license = MIT
+	makedepends = rust
+	makedepends = cargo
+	makedepends = nodejs
+	makedepends = npm
+	depends = webkit2gtk-4.1
+	depends = gtk3
+	depends = libayatana-appindicator
+	depends = librsvg
+	provides = markeasy
+	conflicts = markeasy
+
+pkgname = markeasy-git
